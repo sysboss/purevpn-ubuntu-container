@@ -16,7 +16,7 @@ RUN apt-get update \
 
 # Download and install PureVPN
 RUN wget -O purevpn_amd64.deb 'https://s3.amazonaws.com/purevpn-dialer-assets/linux/app/purevpn_amd64.deb?utm_source=Linux%20App&utm_medium=Downloads%20Tracking&utm_campaign=Linux%20App%2064%20Bit%20Beta%20Download%20Tracking' \
-  && dpkg -i purevpn_amd64.deb
+ && dpkg -i purevpn_amd64.deb
 
 ADD entrypoint.sh /entrypoint.sh
 
